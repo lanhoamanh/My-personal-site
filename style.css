@@ -100,19 +100,19 @@ nav a:hover {
     overflow-y: auto;
 }
 
-/* FIX 3 Ô BÊN DƯỚI */
+
 .three-boxes {
     flex: 1;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Cắt hoàn toàn mép ảnh thừa tràn ra ngoài */
+    overflow: hidden; 
 }
 
 .three-boxes p {
     margin-bottom: 8px;
 }
 
-/* Bắt buộc thẻ <a> giãn rộng full 100% khoảng trống còn lại */
+
 .three-boxes a {
     display: block;
     flex: 1;
@@ -122,7 +122,7 @@ nav a:hover {
     position: relative;
 }
 
-/* Ép ảnh vừa khít 100% thẻ <a> mà không bị trào viền hay bóp méo */
+
 .three-boxes img {
     position: absolute;
     top: 0;

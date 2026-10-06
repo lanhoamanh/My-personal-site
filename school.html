@@ -6,6 +6,96 @@
     <title>My School</title>
 </head>
 
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('https://i.pinimg.com/1200x/80/9c/9c/809c9cf6330218aec618a0a0fd750711.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 20px 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #02122F; 
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #02122F;
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .main-container > h2 {
+        margin: 0;
+        color: #02122F;
+        font-size: 22px;
+        text-transform: lowercase;
+    }
+
+    .school-1, .school-2, .school-3, .school-4, .school-5, .school-6 {
+        border: 3px solid #02122F;
+        background-color: rgba(221, 222, 240, 0.45); 
+        backdrop-filter: blur(4px);
+        color: #02122F; 
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .school-1 p, .school-2 p, .school-3 p, .school-4 p, .school-5 p, .school-6 p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .school-1 img, .school-2 img, .school-3 img, .school-4 img, .school-5 img {
+        display: block;
+        border: 3px solid #02122F;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .school-6 video {
+        display: block;
+        border: 3px solid #02122F;
+        border-radius: 8px;
+        width: 400px;
+        height: 230px;
+        object-fit: cover;
+        background-color: #000;
+    }
+</style>
+
 <body>
      <header>
         <nav>
@@ -21,35 +111,33 @@
 
         <div class="school-1">
             <p>This is my class photo from the School Opening Ceremony this year</p>
-            <img src="./assets/school1.jpg">
+            <img src="./assets/school1.jpg" alt="Class photo from Opening Ceremony">
         </div>
 
         <div class="school-2">
             <p>I would like to say that I hate school tasks so much.</p>
-            <img src="./assets/school2.jpg">
+            <img src="./assets/school2.jpg" alt="School tasks">
         </div>
 
         <div class="school-3">
             <p>This is me when I have to stay up late to finish my group presentation before the deadline. Yeah! So tired!</p>
-            <img src="./assets/school3.jpg">
+            <img src="./assets/school3.jpg" alt="Staying up late for presentation">
         </div>
 
         <div class="school-4">
             <p>At my school, students are be able to choose the sports they like to play. And I choose volleyball, although my teamwork is not good.</p>
-            <img src="./assets/school4.jpg">
+            <img src="./assets/school4.jpg" alt="Playing volleyball">
         </div>
 
         <div class="school-5">
             <p>This is me (I took this photo) and my friends when we have free time at school, we often watch movies on Youtube.</p>
-            <img src="./assets/school5.jpg">
+            <img src="./assets/school5.jpg" alt="Watching Youtube with friends">
         </div>
 
         <div class="school-6">
             <p>Moreover, I also participated in school events and activities, which helped me develop valuable skills and make new friends.
                 For example, I was chosen to attend a stem-training course at my school, where I learned about robotics and programming. It was a great experience that allowed me to explore my interests and gain practical knowledge in the field of STEM.</p>
-            </p>
-            <video controls src="./assets/school.mp4">
-            </video>
+            <video controls src="./assets/school.mp4"></video>
         </div>
     </div>
 </body>
